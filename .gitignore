@@ -1,0 +1,23 @@
+# ---- Maven ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ---- VS Code ----
+.vscode/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- 本地笔记 / 草稿(不想公开的可以放这里)----
+*.local.md
+private/
