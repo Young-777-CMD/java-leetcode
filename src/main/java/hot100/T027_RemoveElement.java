@@ -14,10 +14,22 @@ public class T027_RemoveElement {
 
     public int removeElement(int[] nums, int val) {
         // TODO 把力扣「提交记录」里那次通过的代码粘到这里
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left <= right) {
+            if (nums[left] == val) {
+                nums[left] = nums[right];
+                right--;
+            } else {
+                left++;
+            }
+        }
+
+        return left;
         // 注意三条:
         //   1. 类名保持 T027_RemoveElement(别改回 Solution)
         //   2. 力扣自动生成的带下划线的参数名,改成正常命名
         //   3. 删掉 main 方法和调试用的打印
-        throw new UnsupportedOperationException("还没填");
     }
 }
